@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doug MacDowell</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+<script>
+  function toggleSection(id, btn) {
+    const section = document.getElementById(id);
+    const triangle = btn.querySelector(".triangle");
+
+    const isOpen = section.style.display === "block";
+
+    section.style.display = isOpen ? "none" : "block";
+    triangle.textContent = isOpen ? "▶" : "▼";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".section-content").forEach((sec) => {
+      sec.style.display = "none";
+    });
+  });
+</script>
+
+
+
+
+  </head>
+
+  <body>
+    
+<main>
+    
+    <header>
+      <h1>Douglas MacDowell</h1> 
+      <h2>Notary Public – Columbus, Ohio</h2>
+      <p>Professional, prompt, reliable mobile notary services throughout Central Ohio.</p>
+    </header>
+
+    <div class="headshot-with-seal"></div>
+        <img src="images/HEADSHOT_1.png" alt="Professional headshot of Douglas MacDowell" class="headshot" />
+    </div>
+
+<nav>
+  <div>
+    <button onclick="toggleSection('about', this)">
+      <span class="triangle">▶</span>
+      <span class="button-label">About</span>
+    </button>
+  </div>
+  <div id="about" class="section-content">
+    <p>
+        I am a commissioned Notary Public in the state of Ohio, background checked and E&O insured. 
+        I provide professional, prompt, and confidential mobile notary services. 
+        In addition to being a Notary, I work part-time as a Data Analyst at Nationwide Children’s Hospital 
+        and bring a high level of accuracy and professionalism to every signing.
+      </p>
+  </div>
+
+  <div>
+    <button onclick="toggleSection('services', this)">
+      <span class="triangle">▶</span>
+      <span class="button-label">Services</span>
+    </button>
+  </div>
+  <div id="services" class="section-content">
+    <p>Mobile notary services, general notary work, and loan signings.</p>
+  </div>
+
+  <div>
+    <button onclick="toggleSection('coverage', this)">
+      <span class="triangle">▶</span>
+      <span class="button-label">Coverage</span>
+    </button>
+  </div>
+  <div id="coverage" class="section-content">
+    <p>
+        Serving Columbus and surrounding areas in Central Ohio. Willing to travel — travel fees may apply.
+      </p>
+  </div>
+
+  <div>
+    <button onclick="toggleSection('fees', this)">
+      <span class="triangle">▶</span>
+      <span class="button-label">Fees</span>
+    </button>
+  </div>
+  <div id="fees" class="section-content">
+    <p>Fees vary by service. Please <a href="mailto:djm3819@gmail.com">contact</a> for a quote. Travel fees may apply.
+        </p>
+  </div>
+
+  <div>
+    <button onclick="toggleSection('availability', this)">
+      <span class="triangle">▶</span>
+      <span class="button-label">Availability</span>
+    </button>
+  </div>
+  <div id="availability" class="section-content">
+    <p>Monday–Friday, 8AM–7PM. Evening and weekend appointments available by request.</p>
+  </div>
+
+  <div>
+    <button onclick="toggleSection('credentials', this)">
+      <span class="triangle">▶</span>
+      <span class="button-label">Credentials</span>
+    </button>
+  </div>
+  <div id="credentials" class="section-content">
+    <p>
+        I am a commissioned Notary Public in the State of Ohio. I have successfully passed a detailed, industry-recognized 
+        background check. I carry $25,000 E&O insurance and have completed notary training.
+      </p>
+  </div>
+
+  <div>
+    <button onclick="toggleSection('contact', this)">
+      <span class="triangle">▶</span>
+      <span class="button-label">Contact</span>
+    </button>
+  </div>
+  <div id="contact" class="section-content">
+    <p>
+    Need help with a notarization? Please contact me at 
+    <a href="mailto:djm3819@gmail.com">djm3819@gmail.com</a>
+    </p>
+  </div>
+</nav>
+
+        <br />
+
+    <footer>
+      <p>© 2025 Douglas MacDowell | Notary Public – Columbus, OH</p>
+    </footer>
+  </main>
+
+
+</body>
+</html>
