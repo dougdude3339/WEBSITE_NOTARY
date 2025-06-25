@@ -288,9 +288,9 @@ nav button:hover .button-label {
 }
 
 .headshot {
-  width: 300px; /* adjust as needed */
+  width: 500px; /* adjust as needed */
   height: auto;
-  border-radius: 8px; /* optional rounded corners */
+  border-radius: 0px; /* optional rounded corners */
 }
 
 .seal {
