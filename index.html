@@ -1,147 +1,412 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doug MacDowell</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;1,200&display=swap"
-      rel="stylesheet"
-    />
+    <!--Page Title-->
+    <title>Mobile Notary in Columbus, Ohio | DMAC Notary</title>
 
-<script>
-  function toggleSection(id, btn) {
-    const section = document.getElementById(id);
-    const triangle = btn.querySelector(".triangle");
+<!--Meta Keywords and Description-->
+<meta name="keywords" content="mobile notary, Ohio notary public, loan signing agent, Columbus notary, DMAC Notary">
+<meta name="description" content="Mobile notary services in Central Ohio. Professional, background-checked, and flexible appointment times.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    const isOpen = section.style.display === "block";
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
 
-    section.style.display = isOpen ? "none" : "block";
-    triangle.textContent = isOpen ? "▶" : "▼";
-  }
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
 
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".section-content").forEach((sec) => {
-      sec.style.display = "none";
-    });
-  });
-</script>
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/dmac-notary-logo.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="images/dmac-notary-logo.png" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
 
 
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#banner">Home</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#fees">Coverage Area and Fees</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
 
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
 
-  </head>
+                </div>
+            </div>
+        </div><!--End of Header-->
 
-  <body>
-    
-<main>
-    
-    <header>
-      <h1>Douglas MacDowell</h1> 
-      <h2>Mobile Notary Public and Loan Signing Agent – Columbus, Ohio</h2>
-      <p>Professional, reliable, confidential mobile notary services throughout Central Ohio.</p>
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>Notary and Loan Signing Services</h1>
+                    <h2>DMAC Notary provides professional, reliable, and confidential mobile notary services throughout Central Ohio.</h2>
+                </div>
+
+                <!--Call to Action-->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScP53BW99JuXaBm5axpOESresOsisZfKa6uCyVYs39CzIYq5w/viewform?usp=header" class="button">SCHEDULE AN APPOINTMENT TODAY</a>
+                <!--End Call to Action-->
+
+            </div>
+
+        </div><!--End of Row-->
     </header>
 
-    <div class="headshot-with-seal"></div>
-        <img src="images/HEADSHOT_SEALS.png" alt="Professional headshot of Douglas MacDowell" class="headshot" />
-    </div>
+    <!--Main Content Area-->
+    <main id="content">
 
-<nav>
-  <div>
-    <button onclick="toggleSection('about', this)">
-      <span class="triangle">▶</span>
-      <span class="button-label">About</span>
-    </button>
-  </div>
-  <div id="about" class="section-content">
-    <p>
-        I’m a commissioned Notary Public in Ohio with a 
-        background check, E&O insurance, Notary Signing Agent (NSA) training, 
-        and a reputation for professionalism and accuracy. 
-        In addition to being a Notary, I work part-time as a Data Analyst at Nationwide Children’s Hospital 
-        and bring a high level of accuracy and professionalism to every signing.
-        I’m currently accepting new mobile notary appointments and am ready to assist 
-        with loan signings and general notary work.
-              </p> <br />
-<a href="Doug MacDowell Notary Resume.pdf" target="_blank">
-  <strong>Download my notary resume 📄</strong>
-</a>
-  </div>
+        <!--Introduction-->
+        <section id="services" class="introduction scrollto">
 
-  <div>
-    <button onclick="toggleSection('services', this)">
-      <span class="triangle">▶</span>
-      <span class="button-label">Services</span>
-    </button>
+            <div class="row clearfix">
 
-  </div>
-  <div id="services" class="section-content">
-    <p>Loan signings, general notary work, and mobile notary services.</p>
-  </div>
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>SERVICES</h3>
+                        <h2 class="section-title">Affordable Notary Services</h2>
+                        <p class="section-subtitle">Whether it is general notary help or assistance with real estate loans, 
+                            we are here to help you with all your notary needs.</p>
+                    </div>
 
-  <div>
-    <button onclick="toggleSection('coverage', this)">
-      <span class="triangle">▶</span>
-      <span class="button-label">Coverage Area and Availability</span>
-    </button>
-  </div>
+                </div>
 
-  <div id="coverage" class="section-content">
-    <p>
-        I serve Franklin, Delaware, Union, and Licking counties in Ohio. 
-        I'm available M–F, 8AM–7PM. Evening and weekend appointments available by request. 
-        Short-notice appointments welcome.
-      </p>
-  </div>
+                <div class="col-2-3">
 
-  <div>
-    <button onclick="toggleSection('fees', this)">
-      <span class="triangle">▶</span>
-      <span class="button-label">Fees</span>
-    </button>
-  </div>
-  <div id="fees" class="section-content">
-    <p>Fees vary by service. Please <a href="mailto:djm3819@gmail.com">contact</a> for a quote. Travel fees may apply.
-        </p>
-  </div>
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                           <i class="fa fa-pencil fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>General Notarizations</h4>
+                            <p>We notarize everyday documents like affidavits, powers of attorney, 
+                                bill of sale, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
 
-  <div>
-    <button onclick="toggleSection('credentials', this)">
-      <span class="triangle">▶</span>
-      <span class="button-label">Credentials</span>
-    </button>
-  </div>
-  <div id="credentials" class="section-content">
-    <p>
-        I am a commissioned Notary Public in the State of Ohio. I have successfully passed a detailed, industry-recognized 
-        background check. I carry $25,000 E&O insurance and have completed Notary Signing Agent (NSA) 
-        training through the National Notary Association (NNA). 
-        You can verify my credentials <a href="https://www.signingagent.com/profile/161927527" target="_blank">here</a>.
-      </p>
-  </div>
 
-  <div>
-    <button onclick="toggleSection('contact', this)">
-      <span class="triangle">▶</span>
-      <span class="button-label">Contact</span>
-    </button>
-  </div>
-  <div id="contact" class="section-content">
-    <p>
-    Need help with a notarization? Please contact me at 
-    <a href="mailto:djm3819@gmail.com">djm3819@gmail.com</a>
-    </p>
-  </div>
-</nav>
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-home fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Loan Signing Services</h4>
+                            <p>Trained and certified Notary Signing Agent (NSA) available for mortgage closings, 
+                                refinance packages, seller documents, and HELOCs. 
+                                Familiar with a wide range of lender documents and requirements.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
 
-        <br />
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Mobile Notary Services</h4>
+                            <p>As mobile notaries we are ready to travel directly to you — homes, hospitals, workplaces, or wherever 
+                                is most convenient for you.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
 
-    <footer>
-      <p>© 2025 Douglas MacDowell | Notary Public – Columbus, OH</p>
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-bolt fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Available 24/7 - 365</h4>
+                            <p>We understand you may need help quickly. We offer 
+                                flexability in scheduling appointments and can work with your schedule.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--End of Introduction-->
+
+
+        <!--Content Section-->
+        <div id="about" class="scrollto clearfix">
+
+            <div class="row no-padding-bottom clearfix">
+
+
+                <!--Content Left Side-->
+                <div class="col-3">
+                    <!--User Testimonial-->
+                    <blockquote class="testimonial text-right bigtest">
+                        <q>The difference between something good and something great is attention to detail.</q>
+                        <footer>— Charles R. Swindoll</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
+
+                </div>
+                <!--End Content Left Side-->
+
+                <!--Content of the Right Side-->
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>ABOUT</h3>
+                        <h2 class="section-title">Meet The Founder</h2>
+                        <p class="section-subtitle">
+                    </div>
+                    <p>DMAC Notary was founded by Doug MacDowell. Doug is a life-long resident 
+                            of Ohio and passionate about serving his local community. In addition 
+                            to founding DMAC Notary, Doug is a professional Data Analyst and brings the 
+                            highest level of accuracy to every notary signing. 
+                    </p>
+                    <p>
+                        Doug is a commissioned Notary Public in the State of Ohio and has 
+                        successfully passed a detailed, industry-recognized background check. Doug carries 
+                        $25,000 E&O insurance and has completed Notary Signing Agent (NSA) training 
+                        through the National Notary Association (NNA). 
+  <a href="https://www.signingagent.com/profile/161927527" target="_blank">
+    You can verify Doug's credentials here.
+  </a>
+</p>
+
+                </div>
+                <!--End Content Right Side-->
+
+                <div class="col-3">
+                    <img src="images/Douglas-MacDowell.png" alt="Doug MacDowell Notary"/>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--End of Content Section-->
+
+
+        <section id="fees" class="introduction scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>COVERAGE AREA AND FEES</h3>
+                        <h2 class="section-title">Serving Central Ohio</h2>
+                        <p class="section-subtitle">We service Franklin, Delaware, Union, and Licking counties 
+                            in Central Ohio with fee's varying by 
+                        type of service, number of documents printed, and travel distance for the appointment.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-2-3">
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                           <i class="fa fa-home fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Loan Documents - $100</h4>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-pencil fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>All Other Documents - $60 or more</h4>
+                            <p>Prices vary depending on the types of documents. Please specify documents for a quote.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-print fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Printing - $20</h4>
+                            <p>We can print your documents and provide you with your own copy. We print all documents 
+                                single-sided on a high-quality laser printer.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Travel - $25</h4>
+                            <p>An additional travel free is required for appointments greater than 20 miles away from Downtown Columbus.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--End of Introduction-->
+
+
+
+      <!--Testimonials-->
+        <aside id="contact" class="scrollto text-center" data-enllax-ratio=".2">
+
+            <div class="row clearfix">
+
+                <div class="section-heading">
+                    <h3>CONTACT</h3>
+                    <p>Email: djm3819@gmail.com <br>
+                        Phone: 330-357-1318 <br>
+                        Hours: Monday thru Friday 8AM to 7PM <br>
+                        Evening and weekend appointments available by request. Short-notice appointments welcome. <br>
+                            </p>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScP53BW99JuXaBm5axpOESresOsisZfKa6uCyVYs39CzIYq5w/viewform?usp=header" class="button">SCHEDULE AN APPOINTMENT TODAY</a>
+
+
+                </div>
+
+
+        </aside>
+        <!--End of Testimonials-->
+
+
+
+
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">© 2025 Douglas MacDowell | Notary Public – Columbus, OH</p>
+
+            <!--End of Social Icons in Footer-->
+        </div>
     </footer>
-  </main>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
 
 
 </body>
